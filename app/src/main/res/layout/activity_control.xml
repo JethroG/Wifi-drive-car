@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ddd"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout3">
+
+
+        <Button
+            android:id="@+id/left_move_first_tab"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/left"
+            />
+        <Button
+            android:id="@+id/right_move_first_tab"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/right"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout4">
+
+        <Button
+            android:id="@+id/up_move_first_tab"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/up" />
+
+        <Button
+            android:id="@+id/down_move_first_tab"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/down" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/enter_ip_adress_wifi"
+        android:textColor="@color/navigationBarColor"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linearLayout4"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/_192_168_4_1"
+        android:inputType="text|datetime"
+        android:textSize="17sp" />
+
+
+
+
+
+
+
+</RelativeLayout>

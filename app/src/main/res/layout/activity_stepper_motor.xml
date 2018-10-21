@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yourcompany.bro.hi.drivecubes.activity.activity.activity.StepperMotorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="30">
+        <Button
+            android:id="@+id/left_move"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/left"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/right_move"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/right"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/up_move"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/up"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/down_move"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/down"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="@string/send"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/sendData"
+            android:background="@drawable/button_border"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="@string/clean"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/clearRecyclerView"
+            android:background="@drawable/button_border"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:hint="@string/enter_ip_adress"
+            android:id="@+id/ipAdress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:text="@string/enter_direction_and_send_car"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <include layout="@layout/content_main" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
